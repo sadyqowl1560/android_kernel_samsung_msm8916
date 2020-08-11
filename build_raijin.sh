@@ -114,7 +114,7 @@ function InitialSetup() {
 	echo -e "Setting up cross-compiler..."
 	export ARCH="arm";
 	export SUBARCH="arm";
-	export CROSS_COMPILE=~/Toolchains/Linaro-7.5-arm-linux-gnueabihf/bin/arm-linux-gnueabihf-;
+	export CROSS_COMPILE=/home/yes/android-toolchain/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-;
 	echo -e "Creating make's \"out\" directory if needed..."
 	if [ ! -d out ]; then
 		mkdir out && echo -e "Make \"out\" directory successfully created.\n";
