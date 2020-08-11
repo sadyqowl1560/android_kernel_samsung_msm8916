@@ -634,3 +634,9 @@ config VM_MAX_READAHEAD
 	  This sets the VM_MAX_READAHEAD value to allow the readahead window
 	  to grow to a maximum size of configured. This will benefit sequential
 	  read throughput and thus early boot performance.
+
+config INCREASE_MAXIMUM_SWAPPINESS
+	bool "Allow swappiness to be set up to 200"
+	depends on ZSWAP
+	default n
+
